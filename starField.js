@@ -7,6 +7,7 @@ class Star{
     
     show(){
         fill(random(255),random(255),random(255));
+        //fill(random(255),random(69));
         noStroke();
         this.sx = map(this.x/this.z,0,1,0,width);
         this.sy = map(this.y/this.z,0,1,0,height);
