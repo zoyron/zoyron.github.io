@@ -5,8 +5,7 @@ body {
 }
 
 .box {
-  width: 450px;
-  display: -ms-grid;
+  width: auto;
   padding: 40px;
   text-align: center;
   margin: auto;
