@@ -4,7 +4,7 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: "Roboto Mono" !important;
-  /* background: #0f0f0f !important; */
+  background: #0f0f0f;
   color: #fff !important;
 }
 
@@ -19,11 +19,26 @@ html, body {
   }
 }
 
+.box {
+  background: #000000;
+  width: auto;
+  padding: 10px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.box-img {
+  border-radius: 20%;
+  opacity: 0.75;
+  width: 239px;
+  height: 239px;
+}
+
 .line {
   width: 24em;
   top: 50%;
   margin: auto;
-  
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -34,27 +49,27 @@ html, body {
   animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal;
 }
 
-@keyframes typewriter {
+@-webkit-keyframes typewriter {
   from {
     width: 0;
   }
   to {
-    width: 18em;
+    width: 11em;
   }
 }
 
 @media screen and (max-width: 768px) {
-  @keyrames typewriter {
+  @-webkit-keyframes typewriter {
     from {
       width: 0px;
     }
     to {
-      width: 17em;
+      width: 11em;
     }
   }
 }
 
-@keyframes blinkTextCursor {
+@-webkit-keyframes blinkTextCursor {
   from {
     border-right-color: rgba(255, 255, 255, 0.75);
   }
@@ -66,9 +81,9 @@ html, body {
 
 nav {
   width: 100%;
-  /* background: #0f0f0f; */
+  background: #0f0f0f;
   height: 80px;
-  z-index: 1;
+  z-index: 2;
 }
 
 nav #brand {
@@ -157,7 +172,7 @@ nav #menu li a:hover {
   height: 90px;
   position: absolute;
   left: 45%;
-  transform: translateX(-40);
+  transform: translateX(-40%);
   text-align: center;
   display: table-cell;
   vertical-align: center;
@@ -224,8 +239,8 @@ nav #menu li a:hover {
 }
 
 .hero {
+  display: flex ;
   height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -257,6 +272,207 @@ nav #menu li a:hover {
   height: 13px;
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
-  -webkit-transform: translate(-50%,0) rotate(45deg);
-  animation: fade_move-down 3s cubic-bezier(0.19,1,0.22,1) infinite;
+  transform: translate(-50%,0) rotate(45deg);
+  animation: fade_move_down 3s cubic-bezier(0.19,1,0.22,1) infinite;
+}
+
+@-webkit-keyframes fade_move_down {
+  0% {
+    transform: translate(0,-20px) rotate(45deg);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 20px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.container-fluid {
+  background: #1b1a1a;
+}
+
+h6 {
+   text-align: center;
+}
+
+.vertical {
+  margin-top: 40px;
+  border-left: 1px solid #fff;
+  height: 80px;
+  position: absolute;
+  left:50%;
+}
+
+.project{
+  height: 500px;
+}
+
+.project1 {
+  background: url(./img/img3.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project1::after {
+  content: "split personality";
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 8%;
+  left: -60%;
+  right: 0;
+  bottom: 0; 
+}
+
+.project2 {
+  background: url(./img/img4.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project2::after {
+  content: "wig of pandora.";
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 80%;
+  left: 90%;
+  right: 0;
+  bottom: 0; 
+}
+
+
+
+.project3 {
+  background: url(./img/img2.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project3::after {
+  content: "blah blah blah.";
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 80%;
+  left: -50%;
+  right: 0;
+  bottom: 0; 
+}
+
+
+.project4 {
+  background: url(./img/img1.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project4::after {
+  content: "blah blah blah blah.";
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 10%;
+  left: 90%;
+  right: 0;
+  bottom: 0; 
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    width: 90% !important;
+    margin: 14px auto;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  .project1::after, .project2::after, .project3::after, .project4::after {
+    display: none;
+  }
+}
+
+.collab {
+  /* background: #1b1a1a; */
+  text-align: right;
+}
+
+.collab p {
+  font-weight: lighter !important;
+  margin-bottom: 20px;
+}
+
+.hr {
+  background: rgba(255, 255, 255, 0.2);
+  height: 1px;
+}
+
+.info {
+  background: #0f0f0f;
+}
+.info h4{
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.info p {
+  color: grey;
+  font-weight: lighter;
+}
+
+.info li {
+  font-weight: lighter;
+  color: #fff;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+#media, #address {
+  text-align: right;
+}
+
+#media ul {
+  list-style: none;
+}
+ 
+#media ul li {
+  display: inline-block;
+}
+
+
+@media screen and (max-width: 768px) {
+  .collab, #personal, #media, #address {
+    text-align: center;
+  }
+
+  .info ul {
+    margin: 0 0 0 -22px;
+    padding: 0;
+  }
+}
+
+.footer {
+  background: #0f0f0f;
+}
+
+#media li {
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+
+#media a {
+  color: gray;
+  text-decoration: none;
+  font-size: 28px;
 }

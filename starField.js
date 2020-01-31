@@ -26,6 +26,7 @@ class Star{
 
 let stars = [];
 let canvas;
+//console.log(box)
 function setup(){
     canvas = createCanvas(windowWidth,windowHeight);
     canvas.position(0,0);

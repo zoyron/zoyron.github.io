@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/2a63b33777.js" crossorigin="anonymous"></script>
     <title>Sagar Arora</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
-    <script src="starField.js"></script> 
+    <!-- <script src="starField.js"></script>  -->
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper mainbackground">
 
         <nav>
             <span id="brand">
@@ -43,12 +45,11 @@
             </ul>
         </div>
         <div class="hero">
-            <div class="header">
+            <div class="row header">
                 <h1 class="line anim_typewriter">I create visual art.</h1>
             </div>
         </div>
         <div class="scroll-down"></div>
-
 
         <div class="container-fluid">
             <br><br><br>
@@ -62,13 +63,13 @@
             <div class="whitespace"></div>
 
             <div class="row">
-                <div class="col-lg-8"></div>
+                <div class="col-lg-8 wow fadeInUp"></div>
 
-                <div class="col-lg-4 project project1" onclick="location.href='project.html'"></div>
+                <div class="col-lg-4 project project1 wow fadeInUp" onclick="location.href='project.html'"></div>
             </div>
             <div class="whitespace"></div>
             <div class="row">
-                <div class="col-lg-6 project project2" onclick="location.href='project.html'"></div>
+                <div class="col-lg-6 project project2 wow fadeInUp" onclick="location.href='project.html'"></div>
 
                 <div class="col-lg-6"></div>
             </div>
@@ -78,15 +79,15 @@
             <div class="row">
                 <div class="col-lg-7"></div>
 
-                <div class="col-lg-4 project project3" onclick="location.href='project.html'"></div>
+                <div class="col-lg-4 project project3 wow fadeInUp" onclick="location.href='project.html'"></div>
 
                 <div class="col-lg-1"></div>
             </div>
             <div class="whitespace"></div>
-            <div class="col-lg-4 project project1" onclick="location.href='project.html'"></div>
+            <div class="col-lg-4 project project4 wow fadeInUp" onclick="location.href='project.html'"></div>
             <div class="row">
                 <div class="col-lg-1"></div>
-                <div class="col-lg-5 project project4" onclick="location.href='project.html'"></div>
+                <div class="col-lg-5 project project5" onclick="location.href='project.html'"></div>
                 <div class="col-lg-6"></div>
             </div>
 
@@ -98,7 +99,7 @@
                 <br><br>
                 <div class="collab">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 wow fadeIn">
                             <p>Not a big fan of public interaction, TBH.</p>
                         </div>
                     </div>
@@ -112,25 +113,24 @@
                 <br><br>
                 <div class="info">
                     <div class="row">
-                        <div class="col-lg-4" id="personal">
-                            <p>connect with me</p>
-                            <h6>ig @meftal_spas</h6>
+                        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s" id="personal">
+                            <p><b>.</b>contact</p>
+                            <h6>+91-7838387677</h6>
                             <br><br>
                         </div>
                         <div class="col-lg-4" id="media">
                             <p>follow me</p>
                             <ul>
-                                <li id="fb">facebook</li>
-                                <li id="ig">instagram</li>
-                                <li id="gh">github</li>
-                                <li id="ln">I was on github, chose to delete it.</li>
+                                <li><a href="https://www.facebook.com/thegreatsaga2" class="wow fadeInUp" data-wow-delay="0.2s"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/meftal_spas/" class="wow fadeInUp" data-wow-delay="0.4s"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/zoyron" class="wow fadeInUp" data-wow-delay="0.8s"><i class="fab fa-github"></i></a></li>
                             </ul>
 
                             <br><br>
                         </div>
                         <div class="col-lg-4" id="address">
                             <p>say hello</p>
-                            <h6>sgrarora2@gmail.com</h6>
+                            <h6 class="wow fadeInDown" data-wow-delay="0.6s">sgrarora2@gmail.com</h6>
                             <br><br>
                         </div>
                     </div>
@@ -138,11 +138,36 @@
             </div>
         </div>
 
-
+    
 
 
 
         <br><br><br><br>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $("#toggle").click(function(){
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+        });
+
+        $("#resize ul li a").click(function(){
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+        });
+
+        $(".close-btn").click(function(){
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+        });
+        
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    
 </body>
 </html>
