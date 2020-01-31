@@ -2,34 +2,147 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/2a63b33777.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sagar Arora</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
-    <script src="starField.js"></script>
+    <script src="starField.js"></script> 
 </head>
 <body>
-    <div class="container">
-    <div class="row justify-content-md-center">
-        <div class="col-6 col-md-3 col-sm-4"></div>
-    <div class="box">
+    <div class="wrapper">
 
-        <img src="img/profile.jpeg" alt="Sagar's profile picture" class="box-img">
-        <h1>Sagar Arora</h1>
-        <h5>Developer  |  Cuber  |  Guitarist  |  Mobile-Photographer  |  Teacher  |  <strong>Compulsive Liar</strong></h5>
-        <p>When your escape escapes you, where do you escape to?</p>
-        <ul>
-            <li><a href="https://www.facebook.com/thegreatsaga2"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/meftal_spas/"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://github.com/zoyron"><i class="fab fa-github"></i></a></li>
-        </ul>
+        <nav>
+            <span id="brand">
+                <a href="index.html">Sagar</a>
+            </span>
+            
+            <ul id="menu">
+                <li><a href="index.html">home<span>.</span></a></li>
+                <li><a href="work.html">work<span>.</span></a></li>
+                <li><a href="about.html">about<span>.</span></a></li>
+                <li><a href="contact.html">contact<span>.</span></a></li>
+            </ul>
+
+            <div id="toggle">
+                <div class="span">menu</div>
+            </div>
+        </nav>
+
+
+        <div id="resize">
+            <div class="close-btn">close</div>
+
+            <ul id="menu">
+                <li><a href="index.html">home<span>.</span></a></li>
+                <li><a href="work.html">work<span>.</span></a></li>
+                <li><a href="about.html">about<span>.</span></a></li>
+                <li><a href="contact.html">contact<span>.</span></a></li>
+            </ul>
         </div>
-    </div>
-    </div>
+        <div class="hero">
+            <div class="header">
+                <h1 class="line anim_typewriter">I create visual art.</h1>
+            </div>
+        </div>
+        <div class="scroll-down"></div>
+
+
+        <div class="container-fluid">
+            <br><br><br>
+
+            <h6>Select work</h6>
+
+            <div class="vertical"></div>
+            <br>
+
+            <div class="whitespace"></div>
+            <div class="whitespace"></div>
+
+            <div class="row">
+                <div class="col-lg-8"></div>
+
+                <div class="col-lg-4 project project1" onclick="location.href='project.html'"></div>
+            </div>
+            <div class="whitespace"></div>
+            <div class="row">
+                <div class="col-lg-6 project project2" onclick="location.href='project.html'"></div>
+
+                <div class="col-lg-6"></div>
+            </div>
+            
+            <div class="whitespace"></div>
+
+            <div class="row">
+                <div class="col-lg-7"></div>
+
+                <div class="col-lg-4 project project3" onclick="location.href='project.html'"></div>
+
+                <div class="col-lg-1"></div>
+            </div>
+            <div class="whitespace"></div>
+            <div class="col-lg-4 project project1" onclick="location.href='project.html'"></div>
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 project project4" onclick="location.href='project.html'"></div>
+                <div class="col-lg-6"></div>
+            </div>
+
+            <div class="whitespace"></div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <br><br>
+                <div class="collab">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Not a big fan of public interaction, TBH.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="hr">
+                    <div class="row"></div>
+                </div>
+
+                <br><br>
+                <div class="info">
+                    <div class="row">
+                        <div class="col-lg-4" id="personal">
+                            <p>connect with me</p>
+                            <h6>ig @meftal_spas</h6>
+                            <br><br>
+                        </div>
+                        <div class="col-lg-4" id="media">
+                            <p>follow me</p>
+                            <ul>
+                                <li id="fb">facebook</li>
+                                <li id="ig">instagram</li>
+                                <li id="gh">github</li>
+                                <li id="ln">I was on github, chose to delete it.</li>
+                            </ul>
+
+                            <br><br>
+                        </div>
+                        <div class="col-lg-4" id="address">
+                            <p>say hello</p>
+                            <h6>sgrarora2@gmail.com</h6>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <br><br><br><br>
     </div>
 </body>
 </html>
