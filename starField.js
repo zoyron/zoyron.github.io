@@ -26,6 +26,7 @@ class Star{
 
 let stars = [];
 let canvas;
+//console.log(box)
 function setup(){
     canvas = createCanvas(windowWidth,windowHeight);
     canvas.position(0,0);
@@ -38,6 +39,7 @@ function setup(){
 
 function draw(){
     translate(width/2,height/2);
+    //background("#0f0f0f");
     background(0);
     for(let i = 0;i<stars.length;i++){
         stars[i].update();
