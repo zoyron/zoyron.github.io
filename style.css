@@ -137,8 +137,9 @@ html, body {
 nav {
   width: 100%;
   background: #0f0f0f;
+  position: fixed;
   height: 80px;
-  z-index: 2;
+  z-index: 1;
 }
 
 nav #brand {
