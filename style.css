@@ -19,20 +19,75 @@ html, body {
   }
 }
 
-.box {
-  background: #000000;
-  width: auto;
-  padding: 10px;
-  margin: auto;
-  margin-top: 15px;
+.container1 {
+  margin: 0;
+  padding: 0;
+  /* background: rgb(236, 234, 234); */
+  background: rgb(240, 239, 239);
+  width: 100%;
+  background-size: cover;
 }
 
-.box-img {
-  border-radius: 20%;
-  opacity: 0.75;
-  width: 239px;
-  height: 239px;
+.box {
+  max-width: 50%; 
+  /* padding: 10%; */
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  font-family: 'Ubuntu', sans-serif;
+
+  color: #746c6c;
 }
+
+.box img {
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20%;
+  opacity: 0.8;
+  border: 4px solid rgba(68, 67, 65,0.4);
+  width: 195px;
+  height: 200px;
+}
+
+.box h1 {
+  margin: auto;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.box h3 {
+  font-size: 25;
+  letter-spacing: 3.7px;
+  font-weight: 100;
+}
+
+.box p {
+  letter-spacing: 1px;
+}
+
+/* @media screen and (max-width: 768) {
+
+  .box {
+    max-width: 75%; 
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #746c6c;
+  }
+  
+  .box-img {
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+    border: 4px solid rgba(68, 67, 65,0.4);
+    width: 75%;
+    height: 75%;
+  }
+
+} */
 
 .line {
   width: 24em;
@@ -239,6 +294,7 @@ nav #menu li a:hover {
 }
 
 .hero {
+  background: #0f0f0f;
   display: flex ;
   height: 100vh;
   align-items: center;
@@ -293,7 +349,8 @@ nav #menu li a:hover {
 }
 
 .container-fluid {
-  background: #1b1a1a;
+  background: #fff;
+  color: #3f3b3b;
 }
 
 h6 {
@@ -320,7 +377,7 @@ h6 {
   width: 45%;
   border-radius: 10%;
   height: 45%;
-  border: 6px solid rgba(68, 67, 65,0.4);
+  border: 6px solid rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 768px) {
@@ -408,4 +465,14 @@ h6 {
   color: gray;
   text-decoration: none;
   font-size: 28px;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(121, 116, 116, 0.5);
+  height: 1px;
 }
